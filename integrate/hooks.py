@@ -133,23 +133,25 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"integrate.tasks.all"
-#	],
-#	"daily": [
-#		"integrate.tasks.daily"
-#	],
-#	"hourly": [
-#		"integrate.tasks.hourly"
-#	],
-#	"weekly": [
-#		"integrate.tasks.weekly"
-#	],
-#	"monthly": [
-#		"integrate.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	"all": [
+		"integrate.supplier.sync_suppliers",
+        "integrate.item.sync_items",
+        "integrate.address.sync_address"
+	],
+	# "daily": [
+	# 	"integrate.controllers.supplier_controller.add_supplier"
+	# ],
+	# "hourly": [
+	# 	"integrate.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"integrate.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"integrate.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------
